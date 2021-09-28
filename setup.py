@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="pyheartradio",
-    version="0.0.1a1",
+    version="0.0.1",
     description="search pyheartradio",
     license="",
     author="JarbasAi",

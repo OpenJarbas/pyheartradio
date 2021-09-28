@@ -11,13 +11,13 @@ pip install pyheartradio
 ## Usage
 
 ```python
-from pyheartradio import IHearthRadio
+from pyheartradio import IHeartRadio
 
-radio = IHearthRadio()
+radio = IHeartRadio()
 
 for s in radio.search_stations("rock"):
     print(s)
-    #{'title': '98 ROCK Tampa', 'description': "Tampa Bay's Rock Station",
+    # {'title': '98 ROCK Tampa', 'description': "Tampa Bay's Rock Station",
     # 'stream': 'http://stream.revma.ihrhls.com/zc697/hls.m3u8',
     # 'image': 'https://i.iheart.com/v3/re/new_assets/5d6542f731cd95618c92d7dc',
     # 'id': 697}
@@ -30,7 +30,7 @@ for s in radio.search_podcast("heavy metal hangover"):
     # 'id': 70625669}
     for episode in radio.get_podcast_episodes(s["id"]):
         print(episode)
-        #{'title': 'Episode 191 -   T. Ferguson',
+        # {'title': 'Episode 191 -   T. Ferguson',
         # 'duration': 8482,
         # 'image': 'https://i.iheart.com/v3/url/aHR0cHM6Ly9wYmNkbjEucG9kYmVhbi5jb20vaW1nbG9nby9pbWFnZS1sb2dvLzI0NDk2NTUvdGh1bWJuYWlsLmpwZw',
         # 'id': 87107553,

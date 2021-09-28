@@ -1,7 +1,7 @@
 import requests
 
 
-class IHearthRadio:
+class IHeartRadio:
     new_user_url = 'https://us.api.iheart.com/api/v1/account/loginOrCreateOauthUser'
 
     search_url = 'https://us.api.iheart.com/api/v3/search/all'
